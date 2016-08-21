@@ -1,0 +1,15 @@
+---
+format: hypermake.v0
+
+name: tbus-toolchain
+description: the base image containing toolchain for development with tbus
+
+targets:
+  image:
+    description: tbus-toolchain base image
+    build: Dockerfile
+    image: robotalks/tbus-toolchain:latest
+
+settings:
+  default-targets:
+    - image
